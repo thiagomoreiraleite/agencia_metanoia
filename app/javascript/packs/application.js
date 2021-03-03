@@ -27,8 +27,14 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { showSolucoesBox } from './solucoes';
+import { changeSlide } from './slides';
+import { moveCarousel } from './carousel';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  showSolucoesBox();
+  changeSlide();
+  moveCarousel();
 });

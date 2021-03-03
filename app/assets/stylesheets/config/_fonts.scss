@@ -1,9 +1,10 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+// $body-font: "Work Sans", "Helvetica", "sans-serif";
+// $headers-font: "Nunito", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -14,3 +15,83 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+@font-face {
+    font-family: "Butler_Black";
+    src: font-url('Butler_Black/Butler_Black.otf');
+    // src: font-url('Avenir/AvenirLight.eot?#iefix') format('embedded-opentype'),
+    //      font-url('Avenir/AvenirLight.woff') format('woff'),
+    //      font-url('Avenir/AvenirLight.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Butler_Bold";
+    src: font-url('Butler_Bold/Butler_Bold.otf');
+    // src: font-url('Avenir/AvenirMedium.eot?#iefix') format('embedded-opentype'),
+    //      font-url('Avenir/AvenirMedium.woff') format('woff'),
+    //      font-url('Avenir/AvenirMedium.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Butler_ExtraBold";
+    src: font-url('Butler_ExtraBold/Butler_ExtraBold.otf');
+    // src: font-url('Avenir/AvenirBold.eot?#iefix') format('embedded-opentype'),
+    //      font-url('Avenir/AvenirBold.woff') format('woff'),
+    //      font-url('Avenir/AvenirBold.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Butler_Light";
+    src: font-url('Butler_Light/Butler_Light.otf');
+    // src: font-url('Avenir/AvenirBold.eot?#iefix') format('embedded-opentype'),
+    //      font-url('Avenir/AvenirBold.woff') format('woff'),
+    //      font-url('Avenir/AvenirBold.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Butler_Medium";
+    src: font-url('Butler_Medium/Butler_Medium.otf');
+    // src: font-url('Avenir/AvenirBold.eot?#iefix') format('embedded-opentype'),
+    //      font-url('Avenir/AvenirBold.woff') format('woff'),
+    //      font-url('Avenir/AvenirBold.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Butler_Regular";
+    src: font-url('/fonts/Butler_Regular/Butler_Regular.otf') format('truetype');
+    // src: font-url('Avenir/AvenirBold.eot?#iefix') format('embedded-opentype'),
+    //      font-url('Avenir/AvenirBold.woff') format('woff'),
+    //      font-url('Avenir/AvenirBold.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Butler_Ultra_Light";
+    src: font-url('Butler_Ultra_Light/Butler_Ultra_Light.otf');
+    // src: font-url('Avenir/AvenirBold.eot?#iefix') format('embedded-opentype'),
+    //      font-url('Avenir/AvenirBold.woff') format('woff'),
+    //      font-url('Avenir/AvenirBold.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Comfortaa-VariableFont_wght";
+    src: font-url('/fonts/Comfortaa-VariableFont_wght/Comfortaa-VariableFont_wght.ttf') format('truetype');
+    // src: font-url('Avenir/AvenirBold.eot?#iefix') format('embedded-opentype'),
+    //      font-url('Avenir/AvenirBold.woff') format('woff'),
+    //      font-url('Avenir/AvenirBold.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  $my-font: "Butler_Regular";
+  $my-font2: "Comfortaa";
+
+  $base-font: $my-font2;
+  $header-font: $my-font;
+  $body-font: $my-font2;
+  $headers-font: $my-font;

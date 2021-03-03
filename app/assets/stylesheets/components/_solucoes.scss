@@ -1,0 +1,57 @@
+.solucoes-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text-solucoes {
+    padding: 0 32px 0 32px;
+    text-align: right;
+    line-height: 1.1;
+    font-family: $my-font2;
+}
+
+#box-publicidade {
+    opacity: 0;
+    transition: opacity 1s; 
+}
+
+#box-publicidade.fade {
+    opacity: 1;
+}
+
+#box-gerenciamento {
+    opacity: 0;
+    transition: opacity 1s; 
+}
+
+#box-gerenciamento.fade {
+    opacity: 1;
+}
+
+#box-inteligencia {
+    opacity: 0;
+    transition: opacity 1s; 
+}
+
+#box-inteligencia.fade {
+    opacity: 1;
+}
+
+#box-estrategia {
+    opacity: 0;
+    transition: opacity 1s; 
+}
+
+#box-estrategia.fade {
+    opacity: 1;
+}
+
+#box-assessoria {
+    opacity: 0;
+    transition: opacity 1s; 
+}
+
+#box-assessoria.fade {
+    opacity: 1;
+}
