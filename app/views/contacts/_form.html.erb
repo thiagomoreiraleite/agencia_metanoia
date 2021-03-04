@@ -1,0 +1,16 @@
+<div class="contact-form">
+<%= simple_form_for @contact do |f| %>
+    <div class="align-form-items">
+    <div class="left-column">
+        <%= f.input :name, required: true, label: false, placeholder: "Nome", id: "upper-input" %>
+        <%= f.input :email, required: true, label: false, placeholder: "tel./e-mail" %>
+    </div>
+    <div class="center-column">
+        <%= f.text_area :message, label: false, placeholder: "Sua mensagem" %>
+    </div>
+    <div class="right-column">
+        <%= f.submit '', class: "form-btn" %>
+    </div>
+    </div>
+<% end %>
+</div>
