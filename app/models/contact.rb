@@ -1,11 +1,11 @@
 class Contact < ApplicationRecord
-  validates :name, :email, :message, presence: true
+  # validates :name, :email, :message, presence: true
 
-  after_create :send_welcome_email
+  # after_create :send_welcome_email
 
-  private
+  # private
 
-  def send_welcome_email
-    ContactMailer.with(contact: self).create_new_contact.deliver_now
-  end
+  # def send_welcome_email
+  #   ContactMailer.with(contact: self).create_new_contact.deliver_now
+  # end
 end

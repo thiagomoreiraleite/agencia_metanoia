@@ -7,10 +7,11 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    redirect_to root_path
-    # mail = ContactMailer.with(contact: @contact).create_new_contact
-    # mail.deliver_now
+    @contact.save
     # redirect_to root_path
+    mail = ContactMailer.with(contact: @contact).create_new_contact
+    mail.deliver_now
+    redirect_to root_path
   end
 
   def contact_params
