@@ -1,5 +1,4 @@
-<div id="background" class="original">
-</div>
+<div id="background" class="original"></div>
 <div class="container">
   <%= render 'navbar' %>
   <%= render 'midbar' %>
@@ -10,7 +9,6 @@
     <%= render 'cards' %>
   </div>
 </div>
-
 <div id="solucoes" style="background-color:white;">
 <div style="height:20px; width:100%;"></div>
   <div style="height:146px; padding-top:40px; background-repeat: no-repeat; background-size: auto; background-position: center; background-image:url(<%= asset_path'title_solucoes.png'%>);"></div>
@@ -35,8 +33,6 @@
   <div>
       <%=image_tag('xadrez_rodape.png')%>
   </div>
-
-
   <div class="contact-form">
     <%= simple_form_for @contact do |f| %>
       <div class="align-form-items">
@@ -53,6 +49,4 @@
       </div>
     <% end %>
   </div>
-  
-
 </div>
