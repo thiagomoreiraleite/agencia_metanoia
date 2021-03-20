@@ -1,7 +1,7 @@
-.desktop {
+#desktop {
     display:block;
 }
-.mobile {
+#mobile {
     display: none;
     #mob-index {
         background-image:asset-url('mob_index_bkg_1.jpg');
@@ -25,10 +25,10 @@
     }
 }
 @media only screen and (max-width: 1000px){
-    .desktop {
+    #desktop {
         display:none;
     }
-    .mobile {
+    #mobile {
         display: block;
     }
 }
