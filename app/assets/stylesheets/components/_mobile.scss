@@ -181,6 +181,7 @@
 }
 .mob-flip-card {
     perspective: 10000px;
+    -webkit-perspective: 1000px;
     height: 20vh;
     width: 75vw;
 }
@@ -191,25 +192,29 @@
     width: 75vw;
     text-align: center;
     transition: transform 1s;
+    -webkit-transition: transform 1s;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .mob-flip-card:hover .mob-flip-card-inner {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .mob-flip-card-front, .mob-flip-card-back {
     position: absolute;
     height: 20vh;
     width: 75vw;
-    -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
 }
 
 .mob-flip-card-back {
     background-color: $yellow;
     color: black;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     padding: 1vh;
     p {
         line-height: 1;
