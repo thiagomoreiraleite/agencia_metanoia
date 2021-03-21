@@ -136,8 +136,8 @@
     width: 70vw;
     height: 35vh;
     font-family: $my-font2;
-    font-size: 2vh;
-    line-height: 1.1;
+    font-size: 1.9vh;
+    line-height: 1.15;
     font-weight: 600;
     padding-top: 3vh;
 }
@@ -243,8 +243,89 @@
     background-repeat: no-repeat; 
     background-size: contain; 
     background-position: center;
-    width: 75vw;
-    height: 20vh;
+    width: 70vw;
+    height: 18vh;
+}
+.mob-solucoes-line {
+    background-image: asset-url("mob_solucoes_linha.png");
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-position: center;
+    width: 30vw;
+    height: 5vh;
+}
+#mobsolcarousel-example {
+    display: block;
+    position: relative;
+    align-self: center;
+    // position: absolute;
+    // top:25vh;
+    // left:15vw;
+    width: 50vw;
+    height: 48vh;
+    .carousel-indicators {
+        position: absolute;
+        bottom: -4vh;
+        margin:0;
+        li {
+        cursor: pointer;
+        height: 2vh;
+        width: 2vh;
+        margin: 0 2vh;
+        background-color: #bbb;
+        border-radius: 50%;
+        transition: background-color 0.6s ease;
+        }
+        .active, li:hover {
+            background-color: #ffbb00;
+        }
+    }
+    .carousel-inner {
+        width: 50vw;
+        height: 48vh;
+        align-items: center;
+        .carousel-item {
+            width: 50vw;
+            height: 48vh;
+            align-items: center;
+            .carousel-caption {
+                height: 28vh;
+                color: black;
+                padding:0;
+                p {
+                    padding-top: 4vh;
+                    margin: 0;
+                    margin-block: 0;
+                    font-family: $my-font2;
+                    font-weight: bold;
+                    font-size: 1.8vh;
+                }
+            }
+            img {
+                width: 50vw;
+                height: 20vh;
+            }
+        }
+    }
+}
+#mob-solucoes-line-bottom {
+    position: absolute;
+    bottom: 20vh;
+    margin:0;
+}
+#mobsoliconprev {
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    left: -70px;
+    opacity: 0;
+}
+#mobsoliconnext {
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    right: -70px;
+    opacity: 0;
 }
 /////// PORTFOLIO
 .mob-portfolio-title {
@@ -269,9 +350,13 @@
     // left:15vw;
     width: 60vw;
     height: 60vh;
-    .carousel-inner img {
+    .carousel-inner {
         width: 60vw;
         height: 60vh;
+        img {
+            width: 60vw;
+            height: 60vh;
+        }
     }
 }
 #mobiconprev {
@@ -279,12 +364,14 @@
     width: 62px;
     position: absolute;
     left: -30px;
+    opacity: 1;
 }
 #mobiconnext {
     height: 62px;
     width: 62px;
     position: absolute;
     right: -30px;
+    opacity: 1;
 }
         // CAROUSEL
 // @media (max-width: 1000px) {
