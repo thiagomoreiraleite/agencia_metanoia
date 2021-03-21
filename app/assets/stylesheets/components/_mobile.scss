@@ -262,7 +262,7 @@
     // top:25vh;
     // left:15vw;
     width: 50vw;
-    height: 48vh;
+    height: 50vh;
     .carousel-indicators {
         position: absolute;
         bottom: -4vh;
@@ -282,14 +282,14 @@
     }
     .carousel-inner {
         width: 50vw;
-        height: 48vh;
+        height: 50vh;
         align-items: center;
         .carousel-item {
             width: 50vw;
-            height: 48vh;
+            height: 50vh;
             align-items: center;
             .carousel-caption {
-                height: 28vh;
+                height: 30vh;
                 color: black;
                 padding:0;
                 p {
@@ -310,7 +310,7 @@
 }
 #mob-solucoes-line-bottom {
     position: absolute;
-    bottom: 20vh;
+    bottom: 18vh;
     margin:0;
 }
 #mobsoliconprev {
