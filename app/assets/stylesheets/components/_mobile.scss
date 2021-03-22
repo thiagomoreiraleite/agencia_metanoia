@@ -25,6 +25,12 @@
     }
 }
 @media only screen and (max-width: 1000px){
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 1000px){
     #desktop {
         display:none;
     }
@@ -37,7 +43,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:88vh;
+    // height:88vh;
     width: 100vw;
     background-position: center; 
     background-size: cover; 
@@ -48,8 +54,8 @@
 /////// MENU BAR BOTTOM
 .mob-menu-wrapper {
     background-color: black;
-    border-top: 1px solid white; 
-    height:12vh; 
+    border-top: 0.2vh solid white; 
+    // height:12vh; 
     width: 100vw; 
     display:flex; 
     align-items: flex-end; 
@@ -60,7 +66,7 @@
     position: relative; 
     cursor:pointer; 
     width: 25vw; 
-    height:12vh; 
+    // height:12vh; 
     background-repeat: no-repeat; 
     background-size: contain; 
     background-position: center;
@@ -96,7 +102,7 @@
     background-size: contain; 
     background-position: center;
     width: 60vw;
-    height: 35vh;
+    // height: 35vh;
     align-self: center;
 }
 .mob-index-vc {
@@ -105,41 +111,41 @@
     background-size: contain; 
     background-position: center;
     width: 60vw;
-    height: 30vh;
+    // height: 30vh;
     align-self: center;
 }
 //////// AGENCIA
 .mob-agencia-xadrez {
     position: absolute;
-    top:-7vh;
+    // top:-7vh;
     right:0;
     background-image: asset-url("mob_agencia_xadrez.png");
     background-repeat: no-repeat; 
     background-size: contain; 
     background-position: center;
     width: 30vw;
-    height: 30vh;
+    // height: 30vh;
 }
 .mob-agencia-title {
     position: absolute;
-    top:6vh;
+    // top:6vh;
     left:15vw;
     background-image: asset-url("mob_agencia_title.png");
     background-repeat: no-repeat; 
     background-size: contain; 
     background-position: center;
     width: 50vw;
-    height: 27vh;
+    // height: 27vh;
 }
 .mob-agencia-text {
     text-align: left;
     width: 70vw;
-    height: 35vh;
+    // height: 35vh;
     font-family: $my-font2;
-    font-size: 1.9vh;
+    // font-size: 1.9vh;
     line-height: 1.15;
     font-weight: 600;
-    padding-top: 3vh;
+    // padding-top: 3vh;
 }
 ////// SOCIOS
 .mob-socios-title {
@@ -148,27 +154,23 @@
     background-size: contain; 
     background-position: center;
     width: 75vw;
-    height: 20vh;
+    // height: 20vh;
 }
 
       // FLIP CARD
 .mob-cards {
-    // display: flex;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1vh;
-    // margin: 48px 0;
-    // align-items: flex-start;
-    // justify-content: space-between;
+    // grid-gap: 1vh;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:5vh;
+    // margin-bottom:5vh;
   }
   .mob-image-card {
     background-size: contain;
     background-position: center;
-    height: 20vh;
+    // height: 20vh;
     width: 75vw;
     display: flex;
     justify-content: center;
@@ -182,13 +184,13 @@
 .mob-flip-card {
     perspective: 10000px;
     -webkit-perspective: 1000px;
-    height: 20vh;
+    // height: 20vh;
     width: 75vw;
 }
 
 .mob-flip-card-inner {
     position: relative;
-    height: 20vh;
+    // height: 20vh;
     width: 75vw;
     text-align: center;
     transition: transform 1s;
@@ -204,7 +206,7 @@
 
 .mob-flip-card-front, .mob-flip-card-back {
     position: absolute;
-    height: 20vh;
+    // height: 20vh;
     width: 75vw;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden; /* Safari */
@@ -215,31 +217,25 @@
     color: black;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
-    padding: 1vh;
+    // padding: 1vh;
     p {
         line-height: 1;
         margin:0;
         font-family: $my-font2;
-        font-size: 1.7vh;
+        // font-size: 1.7vh;
         // font-weight: lighter;
     }
 }
 
 .mob-flip-card-back .mob-text-left {
-    // padding: 32px 64px 0 32px;
-    // font-size: 1vh;
     text-align: left;
 }
 
 .mob-flip-card-back .mob-text-center {
-    // padding: 32px 48px 0 48px;
-    // font-size: 1vh;
     text-align: center;
 }
 
 .mob-flip-card-back .mob-text-right {
-    // padding: 32px 32px 0 48px;
-    // font-size: 1vh;
     text-align: right;
 }
 /////// SOLUCOES
@@ -249,7 +245,7 @@
     background-size: contain; 
     background-position: center;
     width: 70vw;
-    height: 18vh;
+    // height: 18vh;
 }
 .mob-solucoes-line {
     background-image: asset-url("mob_solucoes_linha.png");
@@ -257,26 +253,23 @@
     background-size: contain; 
     background-position: center;
     width: 30vw;
-    height: 5vh;
+    // height: 5vh;
 }
 #mobsolcarousel-example {
     display: block;
     position: relative;
     align-self: center;
-    // position: absolute;
-    // top:25vh;
-    // left:15vw;
     width: 50vw;
-    height: 50vh;
+    // height: 50vh;
     .carousel-indicators {
         position: absolute;
-        bottom: -4vh;
+        // bottom: -4vh;
         margin:0;
         li {
         cursor: pointer;
-        height: 2vh;
-        width: 2vh;
-        margin: 0 2vh;
+        height: 13px;
+        width: 13px;
+        margin: 0 12px;
         background-color: #bbb;
         border-radius: 50%;
         transition: background-color 0.6s ease;
@@ -287,35 +280,35 @@
     }
     .carousel-inner {
         width: 50vw;
-        height: 50vh;
+        // height: 50vh;
         align-items: center;
         .carousel-item {
             width: 50vw;
-            height: 50vh;
+            // height: 50vh;
             align-items: center;
             .carousel-caption {
-                height: 30vh;
+                // height: 30vh;
                 color: black;
                 padding:0;
                 p {
-                    padding-top: 4vh;
+                    // padding-top: 4vh;
                     margin: 0;
                     margin-block: 0;
                     font-family: $my-font2;
                     font-weight: bold;
-                    font-size: 1.8vh;
+                    // font-size: 1.8vh;
                 }
             }
             img {
                 width: 50vw;
-                height: 20vh;
+                // height: 20vh;
             }
         }
     }
 }
 #mob-solucoes-line-bottom {
     position: absolute;
-    bottom: 18vh;
+    // bottom: 18vh;
     margin:0;
 }
 #mobsoliconprev {
@@ -340,27 +333,21 @@
     background-size: contain; 
     background-position: center;
     width: 40vw;
-    height: 10vh;
-    // position: absolute;
-    // top:7vh;
-    // left:29vw;
-    margin-bottom: 5vh;
+    // height: 10vh;
+    // margin-bottom: 5vh;
 }
 #mobcarousel-example {
     display: block;
     position: relative;
     align-self: center;
-    // position: absolute;
-    // top:25vh;
-    // left:15vw;
     width: 60vw;
-    height: 60vh;
+    // height: 60vh;
     .carousel-inner {
         width: 60vw;
-        height: 60vh;
+        // height: 60vh;
         img {
             width: 60vw;
-            height: 60vh;
+            // height: 60vh;
         }
     }
 }
@@ -378,67 +365,74 @@
     right: -30px;
     opacity: 1;
 }
-        // CAROUSEL
-// @media (max-width: 1000px) {
-//     .mobcarousel-item {
-//         margin-right: 0;
-//     }
-//     .mobcarousel-inner .active + .mobcarousel-item {
-//         display: block;
-//     }
-//     .mobcarousel-inner .mobcarousel-item.active:not(.mobcarousel-item-right):not(.mobcarousel-item-left),
-//     .mobcarousel-inner .mobcarousel-item.active:not(.mobcarousel-item-right):not(.mobcarousel-item-left) + .mobcarousel-item {
-//         transition: none;
-//     }
-//     .mobcarousel-inner .mobcarousel-item-next {
-//         position: relative;
-//         transform: translate3d(0, 0, 0);
-//     }
-//     .active.mobcarousel-item-left + .mobcarousel-item-next.mobcarousel-item-left,
-//     .mobcarousel-item-next.mobcarousel-item-left + .mobcarousel-item,
-//     .mobcarousel-item-next.mobcarousel-item-left + .mobcarousel-item + .mobcarousel-item {
-//         position: relative;
-//         transform: translate3d(-100%, 0, 0);
-//         visibility: visible;
-//     }
-//     .mobcarousel-inner .mobcarousel-item-prev.mobcarousel-item-right {
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         z-index: -1;
-//         display: block;
-//         visibility: visible;
-//     }
-//     .active.mobcarousel-item-right + .mobcarousel-item-prev.mobcarousel-item-right,
-//     .mobcarousel-item-prev.mobcarousel-item-right + .mobcarousel-item,
-//     .mobcarousel-item-prev.mobcarousel-item-right + .mobcarousel-item + .mobcarousel-item {
-//         position: relative;
-//         transform: translate3d(100%, 0, 0);
-//         visibility: visible;
-//         display: block;
-//         visibility: visible;
-//     }
-// }
-// .mobcarousel-control-next-icon
-// {
-//   background-image: asset-url('botao_next.png');
-//   background-position: center; 
-//   background-size: auto; 
-//   background-repeat: no-repeat;
-//   height: 82px;
-//   width: 82px;
-//   position: absolute;
-//   right: -30px;
-//   opacity: unset;
-// }
 
-// .mobcarousel-control-prev-icon {
-//     background-image: asset-url('botao_prev.png');
-//     background-position: center; 
-//     background-size: auto; 
-//     background-repeat: no-repeat;
-//     height: 82px;
-//     width: 82px;
-//     position: absolute;
-//     left: -45px;
-// }
+///////// SIZES
+.height-eighty-eight {
+    height:88vh;
+}
+.height-twelve {
+    height:11.8vh;
+}
+.height-thirty {
+    height: 30vh;
+}
+.height-thirty-five {
+    height: 35vh;
+}
+.top-minus-seven {
+    top:-7vh;
+}
+.top-six {
+    top:6vh;
+}
+.height-twenty-seven {
+    height: 27vh;
+}
+.font-one-nine {
+    font-size: 1.9vh;
+}
+.padding-top-three {
+    padding-top: 3vh;
+}
+.height-twenty {
+    height: 20vh;
+}
+.grid-gap-one {
+    grid-gap: 1vh;
+}
+.margin-bottom-five {
+    margin-bottom:5vh;
+}
+.padding-one {
+    padding: 1vh;
+}
+.font-one-seven {
+    font-size: 1.7vh;
+}
+.height-eighteen {
+    height: 18vh;
+}
+.height-five {
+    height: 5vh;
+}
+.height-fifty {
+    height: 50vh;
+}
+.bottom-minus-four {
+    bottom: -4vh;
+}
+.padding-top-four {
+    padding-top: 4vh;
+}
+.font-one-eight {
+    font-size: 1.8vh;
+}
+.bottom-eighteen {
+    bottom: 18vh;
+}
+.height-ten {
+    height: 10vh;
+}
+.height-sixty {
+    height: 60vh;
+}
