@@ -13,12 +13,6 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .align-form-items {
-    margin-inline: 120px;
-  }
-}
-
 .left-column {
   text-align: right;
 }
@@ -87,4 +81,23 @@ input.form-btn {
   background-position: center; 
   background-size: auto; 
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-form {
+    height:20vh;
+    width:85vw;
+  }
+  .align-form-items {
+    margin-inline: 10px;
+    margin-block: 12px;
+    grid-template-columns: 2fr 3fr 1fr;
+  }
+  .input.form-btn {
+    height: 50px;
+    width: 50px;
+    padding:0;
+    border-radius: 20px;
+    background-size: contain;
+  }
 }

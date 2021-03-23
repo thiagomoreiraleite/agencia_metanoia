@@ -170,6 +170,15 @@
     margin-bottom: 0;
     justify-content: center;
 }
+@media (max-width: 1000px) {
+    .footer-contacts {
+        margin-top: 10px;
+        img {
+            height:10vh;
+            width:25vw;
+        }
+    }
+}
 
 .footer-agencia {
     display:flex; 

@@ -1,5 +1,17 @@
+<div class="footer-contacts">
+    <div>
+        <%=image_tag('contatos_telefone.png')%>
+    </div>
+    <div>
+        <%=image_tag('contatos_email.png')%>
+    </div>
+    <div>
+        <%=image_tag('contatos_localizacao.png')%>
+    </div>
+</div>
+
 <div class="contact-form">
-<%= simple_form_for @contact do |f| %>
+<%= simple_form_for [@contact] do |f| %>
     <div class="align-form-items">
         <div class="left-column">
             <%= f.input :name, required: true, label: false, placeholder: "Nome", id: "upper-input" %>

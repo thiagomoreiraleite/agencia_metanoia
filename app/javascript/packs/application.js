@@ -31,6 +31,7 @@ import { showSolucoesBox } from './solucoes';
 import { changeSlide } from './slides';
 import { moveCarousel } from './carousel';
 import { mobileMenu } from './mobile_menu';
+import { mobileForm } from './mobile_form';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -39,5 +40,5 @@ document.addEventListener('turbolinks:load', () => {
   showSolucoesBox();
   changeSlide();
   moveCarousel();
-  
+  mobileForm();
 });
