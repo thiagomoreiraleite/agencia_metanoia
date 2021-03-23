@@ -306,11 +306,12 @@
         }
     }
 }
-#mob-solucoes-line-bottom {
-    position: absolute;
-    // bottom: 18vh;
-    margin:0;
-}
+// #mob-solucoes-line-bottom {
+//     position: absolute;
+//     // bottom: 18vh;
+//     margin:0;
+    // bottom:18vh;
+// }
 #mobsoliconprev {
     height: 200px;
     width: 150px;
@@ -418,8 +419,8 @@
 .height-fifty {
     height: 50vh;
 }
-.bottom-minus-four {
-    bottom: -4vh;
+.bottom-minus-eight {
+    bottom: -8vh;
 }
 .padding-top-four {
     padding-top: 4vh;
