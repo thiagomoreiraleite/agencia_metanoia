@@ -391,6 +391,9 @@
 }
 .font-zero-eight-rem {
     font-size: 0.8rem;
+    @media only screen and (max-height: 650px){
+        font-size: 0.7rem; 
+    }
 }
 .padding-top-three {
     padding-top: 3vh;
