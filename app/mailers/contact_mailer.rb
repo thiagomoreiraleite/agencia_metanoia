@@ -8,7 +8,7 @@ class ContactMailer < ApplicationMailer
   def create_new_contact
     @contact = params[:contact]
     mail(
-      to: 'metanoiaestrategia@gmail.com',
+      to: 'atendimento@metanoiaestrategia.com',
       subject: "Mensagem enviada pelo site por: #{@contact.name.capitalize} - #{@contact.email}."
     )
   end
